@@ -1,0 +1,13 @@
+.bt_principal {
+    color: var(--cor-fundo-bt);
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+}
+.bt_salvar {
+    background-color: var(--cor-fundo-bt-salvar);
+}
+
+.bt_cancelar {
+    background-color: var(--cor-fundo-bt-cancelar);
+}

@@ -1,0 +1,25 @@
+@import 'botoes.css';
+
+:root {
+    --cor-fundo-pagina: yellow;
+    --cor-fundo-bt: white;
+    --cor-fundo-bt-salvar: green;
+    --cor-fundo-bt-cancelar: red; 
+}
+
+body {
+    background-color: var(--cor-fundo-pagina);
+}
+
+p {
+    color: blue;
+    text-align: center;
+}
+.p_destaque {
+    text-align: center;
+    font-style: italic;
+}
+#p_segundo {
+    text-align: left;
+    font-style: oblique;
+}
