@@ -1,0 +1,47 @@
+button {
+    /*display: block;*/
+    /*display: none;*/
+    display: inline;
+}
+
+.bt-bottom-right {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+}
+
+div {
+    background-color: aquamarine;
+
+}
+
+.div-v {
+    background-color: blue;
+    color: white;
+    margin-bottom: 5px;
+    width: 100px;
+    display: inline;
+}
+
+.div-menu {
+    position: sticky;
+    top: 0px;
+}
+
+.div-card {
+    background-color: coral;
+}
+
+.div-card-tit {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.div-card-corpo {
+    background-color: green;
+    padding: 5px;
+    position: relative;
+    top: -20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
