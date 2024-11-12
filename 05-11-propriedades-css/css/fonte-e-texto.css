@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.p-primeiro {
+    font-style: italic;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    /*letter-spacing: 1px;*/
+}
+
+a {
+    text-decoration: none;
+    border: 0.1px solid skyblue;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    color: blue;
+}
