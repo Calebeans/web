@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url('campo-de-futebol.jpg');
+    background-size: cover;
+}
+
+header {
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 2em;
+    color: #0056b3;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+}
+
+.box {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    background-image: url('bola-de-futebol.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
