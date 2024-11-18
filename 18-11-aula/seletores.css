@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+div p {
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+td, th {
+    padding: 5px;
+    text-align: left;
+}
+
+thead tr{
+    background-color: antiquewhite;
+}
+
+tbody tr:nth-child(odd){
+    background-color: chocolate;
+}
+
+tbody tr:nth-child(even){
+    background-color: chartreuse;
+}
+
+tbody tr:hover {
+    color: rgb(255, 0, 0);
+}
+
+input[type="checkbox"] + div {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 2, 2);
+    padding: 10px;
+    bottom: 1;
+    top: 30px;
+    left: 0;
+    width: 200px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    border-bottom: 0.1px solid gold;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+input[type="checkbox"]:checked + div {
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+h1, h3 {
+    text-align: center
+}
