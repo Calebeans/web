@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 * {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: rgb(221, 75, 202);
+}
+
+p {
+    text-align: center;
 }
 
 div p {
-    text-align: right;
+    text-align: center;
 }
 
 table {
@@ -40,7 +45,7 @@ tbody tr:hover {
 input[type="checkbox"] + div {
     display: none;
     position: absolute;
-    background-color: rgb(255, 2, 2);
+    background-color: rgb(221, 75, 202);
     padding: 10px;
     bottom: 1;
     top: 30px;
@@ -57,7 +62,7 @@ a {
 }
 
 a:hover {
-    background-color: blue;
+    background-color: rgb(207, 14, 255);
 }
 
 input[type="checkbox"]:checked + div {
