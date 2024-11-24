@@ -1,0 +1,25 @@
+.div-flex {
+    height: 200px;
+    background-color: red;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: start;
+    /*flex-wrap: wrap;*/
+}
+
+.div-flex div {
+    border: 1px solid white;
+    /*width: 30%;*/
+    /*flex-basis: 25%;*/
+    flex: 1 1 25%;
+}
+
+.div-flex-grow {
+    /*flex-grow: 1;*/
+}
+
+.div-flex-shrink {
+    /*flex-shrink: 2;*/
+}
