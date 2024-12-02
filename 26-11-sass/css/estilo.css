@@ -27,3 +27,19 @@ p {
   padding: 10px;
   border-radius: 5px;
 }
+
+button {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 50px;
+}
+
+.botao-confirmar {
+  background-color: green;
+  color: whitesmoke;
+}
+
+.botao-deletar {
+  background-color: red;
+  color: whitesmoke;
+}
