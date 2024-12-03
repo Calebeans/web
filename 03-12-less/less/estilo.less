@@ -1,0 +1,43 @@
+@main-color: blue;
+
+body {
+    background-color: @main-color;
+}
+
+.alerta(@cor_borda: white, @cor_t: black, @cor_f: transparent){
+    border: 1px solid @cor_borda;
+    color: @cor_t;
+    background-color: @cor_borda;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    .alerta;
+}
+
+header {
+    background-color: red;
+    h3 {
+        text-align: center;
+    }
+}
+
+.botao {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+button {
+    .botao;
+}
+
+.botao-confirmar {
+    background-color: green;
+    color: whitesmoke;
+}
+
+.botao-deletar {
+    background-color: red;
+    color: whitesmoke;
+}
