@@ -35,11 +35,11 @@ function testeBusca() {
 
     //pelo seletor CSS (único elemento)
     const ele = document.querySelector('section a');
-    console.log(ele)
+    console.log(ele);
 
     //pelo seletor CSS (vários elemento)
     const eles = document.querySelectorAll('section a');
-    console.log(eles)
+    console.log(eles);
 }
 
 function testeCssText() {
@@ -58,6 +58,13 @@ function testeCssText() {
     tabela.classList.remove('tabela');
 }
 
+function testeRemover(event) {
+    const texto = event.target.getAttribute('data-texto');
+    if (confirm(`Apagar ${texto}?`)) {
+        event.target.parentNode.parentNode.remove();
+    }
+}
+
 function testeCriarEncaixar(event) {
     event.preventDefault();
     const corpoTabela = document.getElementById('corpo_tabela');
@@ -66,11 +73,16 @@ function testeCriarEncaixar(event) {
     const td1 = document.createElement('td');
     const td2 = document.createElement('td');
     const td3 = document.createElement('td');
+    const btEx = document.createElement('button');
+    btEx.innerText = 'Excluir';
+    btEx.setAttribute('data-texto', iptNome.value);
+    btEx.addEventListener('click', testeRemover);
     td1.innerText = '#';
     td2.innerText = iptNome.value;
-    td3.innerText = 'ações';
+    td3.append(btEx);
     tr.append(td1, td2, td3);
     corpoTabela.append(tr);
+    event.target.reset();
 }
 
 
