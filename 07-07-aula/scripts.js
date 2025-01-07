@@ -1,3 +1,4 @@
+//Primeira maneira de buscar os dados com a API
 /*const carregaCidades = () => {
     const uf = document.querySelector('#estado').value;
     const select = document.querySelector('#cidade');
@@ -22,6 +23,8 @@ async function name(params) {
 
 }
 */
+
+//Segunda maneira de buscar os dados com a API
 const carregaCidades = async () => {
     const uf = document.querySelector('#estado').value;
     const select = document.querySelector('#cidade');
