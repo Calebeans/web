@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cartas</h1>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome"><br>
+        <label for="descricao">Descricao</label><br>
+        <input type="text" name="descricao"><br>
+        <button>Salvar</button>
+    </form>
+    <textarea name="dados"></textarea>
+</body>
+<script>
+    async function enviarCartaParaApi(e) {
+        e.preventDefault();
+        const dados = new FormData(e.target);
+        const opt = {
+            method: 'post',
+            body: dados
+        };
+        const res = await fetch('http://localhost/14-01aula2/carta/inserir', opt);
+        const json = await res.json();
+        alert(json.status);
+    }
+    document.querySelector('form').addEventListener('submit', enviarCartaParaApi);
+</script>
+</html>
