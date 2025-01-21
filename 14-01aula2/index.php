@@ -1,6 +1,5 @@
 <?php
 require_once './controleCarta.php';
-
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 $classeControle = 'Controle' . ucfirst($uri[2]);
 $metodo = $uri[3];

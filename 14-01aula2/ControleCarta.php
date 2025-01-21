@@ -4,9 +4,9 @@ class controleCarta
 {
     public function inserir()
     {
-        $sql = 'insert into cartas (nome, descricao) values (?,?)';
-        $nome = 'Carta base';
-        $descricao = 'Essa é uma carta base';
+        $sql = 'insert into cards (nome, descricao) values (?,?)';
+        $nome = filter_input(INPUT_POST, 'nome');
+        $descricao = filter_input(INPUT_POST, 'descricao');
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $nome);
         $preparado->bindValue(2, $descricao);
@@ -19,7 +19,7 @@ class controleCarta
 
     public function listar()
     {
-        $sql = 'select * from cartas';
+        $sql = 'select * from cards';
         $preparado = Conexao::preparaComando($sql);
         if ($preparado->execute()) {
             $todos = $preparado->fetchAll(PDO::FETCH_ASSOC);
