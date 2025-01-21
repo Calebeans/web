@@ -20,6 +20,7 @@ class controleCarta
     public function listar()
     {
         $sql = 'select * from cards';
+        $todos = [];
         $preparado = Conexao::preparaComando($sql);
         if ($preparado->execute()) {
             $todos = $preparado->fetchAll(PDO::FETCH_ASSOC);
