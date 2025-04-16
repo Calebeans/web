@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% set home = 'http://localhost/3-16-04-mvc-twig' %}
+<body>
+    <header>
+        {% block cabecalho %}
+        {% include "componentes/navigation.html.twig" %}
+        {% endblock %}
+    </header>
+    <main>
+        {% block principal %}
+            <p>Calebe</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; Calebe Ribeiro 2025.</p>
+    </footer>
+</body>
+</html>

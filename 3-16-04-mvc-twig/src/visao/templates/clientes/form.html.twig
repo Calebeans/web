@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block cabecalho %}
+    {{ parent() }}
+    <h3>Cadastro de Cliente</h3>
+{% endblock %}
+
+{% block principal %}
+    <form action="{{ home }}/clientes/cadastrar" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <button>Cadastrar</button>
+    </form>
+{% endblock %}
